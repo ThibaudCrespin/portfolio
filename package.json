@@ -1,6 +1,7 @@
 {
   "name": "thibaudcrespin.github.io",
   "description": "This is my Portfolio",
+  "homepage": "https://thibaudcrespin.github.io/portfolio/",
   "dependencies": {
     "react": "16.4.2",
     "react-dom": "16.4.2",
