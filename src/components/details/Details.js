@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { HashRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './details.css';
 
 class Details extends Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (

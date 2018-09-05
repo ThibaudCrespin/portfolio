@@ -1,12 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { render } from 'react-dom';
 import './skills.css';
 import Details from '../details/Details';
 
 class Skills extends Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (

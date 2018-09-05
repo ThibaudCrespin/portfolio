@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
-import styles from './certifications.css';
+import './languages.css';
 import Details from '../details/Details';
 
-class Certifications extends Component {
+class Languages extends Component {
   
   render() {
     return (
       <Fragment>
-        <Details title='Certifications' className={styles}>
+        <Details title='Languages'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Details>
       </Fragment>
@@ -15,4 +15,4 @@ class Certifications extends Component {
   }
 }
 
-export default Certifications;
+export default Languages;

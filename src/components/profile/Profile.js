@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { render } from 'react-dom';
 import './profile.css';
 import Details from '../details/Details';
 

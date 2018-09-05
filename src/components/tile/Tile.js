@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './tile.css';
 
-export default ({ name, color }) => {
-  const style = {
-    backgroundColor: 'navy',
-    color: 'white'
-  };
+class Tile extends Component {
 
-  return (
-    <Link to={`/${name.toLowerCase()}`}>
-      <div className='tile'>
-        <h1>{name}</h1>
-      </div>
-    </Link>
-  )
-};
+  render() {
+
+    return (
+      <Link to={`/${this.props.name.toLowerCase()}`}>
+        <div className='tile' style={this.props.style}>
+          <h1>{this.props.name}</h1>
+        </div>
+      </Link>
+    );
+  }
+}
+
+export default Tile;

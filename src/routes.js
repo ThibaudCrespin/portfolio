@@ -3,8 +3,11 @@ import { Route, Switch, HashRouter } from 'react-router-dom';
 
 import Home from './components/home/Home';
 import Certifications from './components/certifications/Certifications';
-import Profile from './components/profile/Profile';
+import Socials from './components/socials/Socials';
 import Projects from './components/projects/Projects';
+import Skills from './components/skills/Skills';
+import Contact from './components/contact/Contact';
+import Languages from './components/languages/Languages';
 
 class Routes extends Component {
   render () {
@@ -13,8 +16,11 @@ class Routes extends Component {
         <Switch>
           <Route exact path={'/'} component={Home}/>
           <Route exact path={'/certifications'} component={Certifications}/>
-          <Route exact path={'/profile'} component={Profile}/>
+          <Route exact path={'/socials'} component={Socials}/>
           <Route exact path={'/projects'} component={Projects}/>
+          <Route exact path={'/skills'} component={Skills}/>
+          <Route exact path={'/contact'} component={Contact}/>
+          <Route exact path={'/languages'} component={Languages}/>
         </Switch>
       </HashRouter>
     )
