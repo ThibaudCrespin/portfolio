@@ -1,0 +1,25 @@
+.tile {
+  display: flex;
+  width: 35vw;
+  height: 35vw;
+  border: solid 1px black; 
+  margin: 10px;
+  font-size: .8rem;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-size: 1.4rem;
+  align-self: flex-end;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
