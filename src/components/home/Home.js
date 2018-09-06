@@ -24,25 +24,42 @@ class Home extends Component {
     ];
   
     setInterval(() => {
-      const tmp = this.getRandomInt(4);
+      let tmp = this.getRandomInt(theme.length - 1);
+
       if(tmp !== this.state.choice){
         this.setState({
           choice: tmp
         });
       }
-    }, 20000);
+    }, 15000);
 
     const style = theme[this.state.choice];
-    console.log(style, this.state.choice);
+
+    const picture = 'https://pbs.twimg.com/profile_images/833660824468254720/m2t2bSY5_400x400.jpg';
 
     return (
       <div id='home'>
+        <Tile name='Thibaud Crespin' style={style}>
+          <p>23 yo</p>
+          <p>Nantes</p>
+        </Tile>
+        <Tile name='Picture' style={style} picture={picture}/>
         <Tile name='Projects' style={style}/>
         <Tile name='Skills' style={style}/>
-        <Tile name='Socials' style={style}/>
-        <Tile name='Languages' style={style}/>
+        <Tile name='Socials' style={style}>
+          <p>GitHub: ThibaudCrespin</p>
+          <p>Twitter: thi_pas_baud</p>
+          <p>LinkedIn: Thibaud Crespin</p>
+        </Tile>
+        <Tile name='Languages' style={style}>
+          <p>English: Fluent</p>
+          <p>German: Novice</p>
+        </Tile>
         <Tile name='Certifications' style={style}/>
-        <Tile name='Contact' style={style}/>
+        <Tile name='Contact' style={style}>
+          <p>thibaud.crespin@gmail.com</p>
+          <p>(+33)647503861</p>
+        </Tile>
       </div>
     );
   }
