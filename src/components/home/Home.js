@@ -45,13 +45,11 @@ class Home extends Component {
         </Tile>
         <Tile name='Picture' style={style} picture={picture}/>
         <Tile name='Projects' style={style}>
-          <h2>Disponibles sur GitHub</h2>
+          <h2>Available on GitHub</h2>
           <p>ng-2048</p>
           <p>slideshow</p>
-          <p>PHP</p>
-          <p>Git</p>
-          <p>Docker</p>
-          <p>Scrum Method</p>
+          <p>particle</p>
+          <p>git-mapper</p>
         </Tile>
         <Tile name='Skills' style={style}>
           <p>Angular & AngularJS</p>
