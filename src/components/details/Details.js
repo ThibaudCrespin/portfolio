@@ -9,7 +9,7 @@ class Details extends Component {
       <div className='details'>
         <h1>{this.props.title}</h1>
         <div>{this.props.children}</div>
-        <NavLink to="/" className="back"></NavLink>
+        <NavLink to="/" className="back">Back</NavLink>
       </div>
     );
   }

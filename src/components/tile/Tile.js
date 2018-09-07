@@ -12,11 +12,9 @@ class Tile extends Component {
   }
 
   onMouseOver = (elem) => {
-    setTimeout(() => {
-      this.setState({
-        side: 'back'
-      });
-    }, 1200);
+    this.setState({
+      side: 'back'
+    });
   }
 
   onMouseOut = (elem) => {
@@ -27,10 +25,26 @@ class Tile extends Component {
 
   render() {
     let style = this.props.style;
-    if (this.props.picture) {
-      style = {
-        backgroundImage: `url(${this.props.picture})`
-      }
+
+    switch(this.props.name.toLowerCase()){
+      case 'projects': 
+        break;
+      case 'picture': 
+        style = {
+          backgroundImage: `url(${this.props.picture})`,
+          animation: 'none'
+        };
+        break;
+      case 'contact': 
+        break;
+      case 'skills': 
+        break;
+      case 'languages & certifications': 
+        break;
+      case 'projects': 
+        break;
+      default: 
+        break;
     }
 
     return (
